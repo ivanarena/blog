@@ -40,6 +40,12 @@ a:active {
     margin-bottom: 8vh;
 }
 
+@media screen and (max-width: 728px) {
+    .post-container {
+        width: 80vw;
+    }
+}
+
 .post-title {
     font-size: 36px;
     margin-bottom: 2vh;
