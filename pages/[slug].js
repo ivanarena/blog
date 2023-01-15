@@ -3,6 +3,9 @@ import path from 'path'
 import matter from 'gray-matter'
 import { marked } from 'marked'
 import Link from 'next/link'
+import Head from 'next/head'
+
+
 
 export default function PostPage({
     frontmatter: { title, date },
@@ -10,6 +13,10 @@ export default function PostPage({
     content
 }) {
     return <>
+        <Head>
+            <title>{title}</title>
+            <link rel="icon" type="image/x-icon" href="/public/images/favicon.ico" />
+        </Head>
         <Link className='back-btn' href='/'>&larr;</Link>
         <div className='post-container'>
             <h1 className="post-title">{title}</h1>

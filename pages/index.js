@@ -10,6 +10,8 @@ export default function Home({ posts }) {
     <div>
       <Head>
         <title>La Jetée</title>
+        <meta name="description" content="A blog about everything." />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
       </Head>
 
       <div className="posts">
