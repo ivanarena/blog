@@ -8,7 +8,7 @@ export default function Post({ post }) {
             <p className='post-excerpt'>{post.frontmatter.excerpt}</p>
 
             <Link className='post-link' href={`/${post.slug}`}>
-                Read more
+                Read more &rarr;
             </Link>
         </div>
 
