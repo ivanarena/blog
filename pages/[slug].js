@@ -10,8 +10,7 @@ export default function PostPage({
     content
 }) {
     return <>
-        <Link className='back-btn' href='/'>
-        </Link>
+        <Link className='back-btn' href='/'>&larr;</Link>
         <div className='post-container'>
             <h1 className="post-title">{title}</h1>
             <h2 className="post-date">{date}</h2>
