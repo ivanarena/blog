@@ -3,7 +3,9 @@ import Link from 'next/link'
 export default function Post({ post }) {
     return (
         <div className='post-container'>
-            <h1 className='post-title'>{post.frontmatter.title}</h1>
+            <Link href={`/${post.slug}`} className='post-title'>
+                {post.frontmatter.title}
+            </Link>
             <h2 className='post-date'>{post.frontmatter.date}</h2>
             <p className='post-excerpt'>{post.frontmatter.excerpt}</p>
 
